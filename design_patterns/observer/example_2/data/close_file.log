@@ -1,0 +1,12 @@
+2021-07-24 02:43:20.759771 some_file.txt file was closed 
+2021-07-24 02:43:20.760688 some_other_file.txt file was closed 
+2021-07-24 02:54:30.510847 some_file.txt file was closed 
+2021-07-24 02:54:30.511680 some_other_file.txt file was closed 
+2021-07-24 02:55:07.203685 some_file.txt file was closed 
+2021-07-24 02:55:07.204860 some_other_file.txt file was closed 
+2021-07-24 03:07:12.595248: some_file.txt file was closed 
+2021-07-24 03:07:12.596042: some_other_file.txt file was closed 
+2021-07-24 03:07:57.388759: some_file.txt file was closed 
+2021-07-24 03:07:57.390046: some_other_file.txt file was closed 
+2021-07-24 03:14:02.055010: some_file.txt file was closed 
+2021-07-24 03:14:02.055819: some_other_file.txt file was closed 

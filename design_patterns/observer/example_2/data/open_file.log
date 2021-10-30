@@ -1,0 +1,12 @@
+2021-07-24 02:43:20.759355 some_file.txt file was opened 
+2021-07-24 02:43:20.760111 some_other_file.txt file was opened 
+2021-07-24 02:54:30.509287 some_file.txt file was opened 
+2021-07-24 02:54:30.511407 some_other_file.txt file was opened 
+2021-07-24 02:55:07.203334 some_file.txt file was opened 
+2021-07-24 02:55:07.204039 some_other_file.txt file was opened 
+2021-07-24 03:07:12.594604: some_file.txt file was opened 
+2021-07-24 03:07:12.595744: some_other_file.txt file was opened 
+2021-07-24 03:07:57.386971: some_file.txt file was opened 
+2021-07-24 03:07:57.389448: some_other_file.txt file was opened 
+2021-07-24 03:14:02.053250: some_file.txt file was opened 
+2021-07-24 03:14:02.055561: some_other_file.txt file was opened 

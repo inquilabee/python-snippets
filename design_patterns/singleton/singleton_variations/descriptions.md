@@ -1,0 +1,1 @@
+### Variations of the patterns 
