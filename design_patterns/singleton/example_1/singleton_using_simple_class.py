@@ -1,18 +1,21 @@
-class SingletonStudent(object):
+class SingletonStudent:
     _instance = None
 
     def __new__(cls, *args, **kwargs):
+        print("__new__", cls, args, kwargs)
         if not SingletonStudent._instance:
             SingletonStudent._instance = object.__new__(cls)
         return SingletonStudent._instance
 
     def __init__(self, first_name, last_name):
+        print("__init__")
         self.first_name = first_name
         self.last_name = last_name
 
 
 if __name__ == '__main__':
     s1 = SingletonStudent("Yang", "Zhou")
+    print()
     s2 = SingletonStudent("Elon", "Musk")
 
     print(s1)

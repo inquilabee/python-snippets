@@ -48,6 +48,7 @@ def decorator_with_or_without_arguments(_func=None, *, num_times=2):  # noqa
             # Do something here
             value = func(*args, **kwargs)
             # Do something else here
+            # Use `num_times` here
             return value
 
         return wrapper

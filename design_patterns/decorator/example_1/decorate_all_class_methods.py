@@ -1,7 +1,7 @@
-from datetime import datetime
-from functools import wraps
 import time
 from contextlib import suppress
+from datetime import datetime
+from functools import wraps
 
 
 def time_this(func):
@@ -24,12 +24,10 @@ def time_all_class_methods(cls):
         def __getattribute__(self, s):
             with suppress(AttributeError):
                 x = super().__getattribute__(s)
+                # x is an attribute of object class (superclass of Wrapper)
                 return x
 
             x = self.decorated_obj.__getattribute__(s)
-
-            # if isinstance(x, self.__init__):
-            #     pass
 
             if type(x) is type(self.__init__):
                 # it is an instance method
@@ -43,17 +41,20 @@ def time_all_class_methods(cls):
 
 @time_all_class_methods
 class MyClass:
+    name = "MyClass"
+
     def __init__(self):
         time.sleep(1.8)
 
-    def method_x(self):
+    def method_x(self):  # noqa
         time.sleep(0.7)
 
-    def method_y(self):
+    def method_y(self):  # noqa
         time.sleep(1.2)
 
 
 if __name__ == '__main__':
     instance = MyClass()
+    print(instance.name)
     instance.method_x()
     instance.method_y()

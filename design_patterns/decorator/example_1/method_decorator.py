@@ -11,7 +11,6 @@ import functools
 def ensure_integer_arguments(method):
     @functools.wraps(method)
     def wrapper(obj_ref, *args, **kwargs):
-        print(obj_ref)
         for arg in args:
             if not isinstance(arg, int):
                 raise ValueError(f"Passed positional argument {arg} which is not an integer.")

@@ -1,5 +1,5 @@
 """
-Reference:
+Reference: RealPython Blog
 """
 
 import functools
@@ -20,20 +20,23 @@ def singleton(cls):
 
 @singleton
 class TheOne:
-    pass
+    def fun(self):  # noqa
+        return "I'm having fun"
 
 
 @singleton
 class TheOtherOne:
-    pass
+    def fun(self):  # noqa
+        return "I'm having fun"
 
 
 if __name__ == '__main__':
     first = TheOne()
     second = TheOne()
+
     third = TheOtherOne()
     fourth = TheOtherOne()
 
-    print(first is second)
+    print(first is second, first.fun())
     print(third is second)
     print(third is fourth)
